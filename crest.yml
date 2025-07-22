@@ -1,0 +1,21 @@
+name: crest
+channels:
+    - conda-forge
+dependencies:
+    - python=3.13
+    - pip
+    - pipx
+    - crest
+    - pip:
+      - cclib
+      - matplotlib
+      - more-itertools
+      - natsort
+      - pandas
+      - scipy
+      - sympy
+# Tools
+      - ipython
+      - mypy
+      - pytest
+      - ruff

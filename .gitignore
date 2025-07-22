@@ -1,0 +1,4 @@
+molecules/*/*
+!molecules/*/crest_conformers.xyz
+!molecules/*/output.dat
+!molecules/*/crest.out
