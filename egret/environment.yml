@@ -1,0 +1,10 @@
+name: egret-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - ase
+  - pytorch
+  - pip
+  - pip:
+    - mace-torch==0.3.12
