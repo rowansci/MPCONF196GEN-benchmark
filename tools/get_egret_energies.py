@@ -6,7 +6,7 @@ from mace.calculators import mace_off
 KCAL_PER_MOL = 23.0605
 MOLECULES_DIR = "molecules"
 
-calc = mace_off(model="egret/EGRET_1.model", default_dtype="float64")
+calc = mace_off(model="tools/EGRET_1.model", default_dtype="float64")
 
 def process_subdir(subdir: str):
     in_xyz  = os.path.join(subdir, "crest_conformers.xyz")
