@@ -2,6 +2,7 @@ import ase.io
 import torch
 from ase.calculators.calculator import all_changes
 from mace.calculators import mace_off
+import os
 
 KCAL_PER_MOL = 23.0605
 MOLECULES_DIR = "molecules"
