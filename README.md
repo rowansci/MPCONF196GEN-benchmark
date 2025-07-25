@@ -1,5 +1,5 @@
 # mpconf196-gen-benchmark
-
+** Molecular Conformer Generation Benchmark**
 <img src='img/macrocycle_fail.jpg' width=350>
 
 A conformer generation benchmark created from the MPCONF196 benchmark energy dataset [1]. This evaluates a method's ability to generate conformers of macrocycles, a difficult task for molecular conformer generation.
