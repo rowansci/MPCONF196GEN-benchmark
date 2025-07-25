@@ -1,11 +1,25 @@
 # mpconf196-gen-benchmark
+
+<img src='img/macrocycle_fail.jpg' width=350>
+
 A conformer generation benchmark created from the MPCONF196 benchmark energy dataset [1]. This evaluates a method's ability to generate conformers of macrocycles, a difficult task for molecular conformer generation.
 
-Reference conformers were generated with CREST [2] iMTD-GC [3] using GFN2-xTB [3] and conformer energies were computed using Egret-1 [4] neural network potential.
+Reference conformers were generated with CREST iMTD-GC [2] using GFN2-xTB [3] and conformer energies were computed using Egret-1 [4] neural network potential.
 
-# Usage
+## Usage
 `SMILES.txt` contains the number of rotateable bonds, canonical SMILES strings and identifier for each molecule. Each `molecules/{molecule_id}/` directory contains a `crest_conformers_egret.extxyz` file with conformers and energies for each molecule.
 
-# Creating the Benchmark
+## Creating the Benchmark
 
-All packages necessary for making this benchmark can be installed by creating a conda envrionment from `env.yml`. We ran CREST on each `data/{molecule_id}.xyz` file, outputs and conformers can be found in `molecules/{molecule_id}/crest.out` and `molecules/{molecule_id}/crest_confromers.xyz` files respectively. The Egret-1 checkpoint and scripts used to calculate conformer energies and create the `SMILES.txt` file can be found in the `tools/` directory. SMILES for each molecule were generated from the `data/{molecule_id}.xyz` files on rowansci.com, except for `data/YIVNOG_I.xyz` which we made by hand.
+All packages necessary for making this benchmark can be installed by creating a conda envrionment from `env.yml`. We ran CREST on each `data/{molecule_id}.xyz` file, outputs and conformers can be found in `molecules/{molecule_id}/crest.out` and `molecules/{molecule_id}/crest_confromers.xyz` files respectively. The Egret-1 checkpoint and scripts used to calculate conformer energies and create the `SMILES.txt` file can be found in the `tools/` directory. SMILES for each molecule were generated from the `data/{molecule_id}.xyz` files on [rowansci.com](https://rowansci.com), except for `data/YIVNOG_I.xyz` which we made by hand.
+
+## References
+
+[1] Řezáč, J.; Bím, D.; Gutten, O.; Rulíšek, L. *Toward Accurate Conformational Energies of Smaller Peptides and Medium-Sized Macrocycles: MPCONF196 Benchmark Energy Data Set.* J. Chem. Theory Comput. 2018, 14 (3), 1254–1266. https://doi.org/10.1021/acs.jctc.7b01074
+
+[2] Pracht, P.; Grimme, S.; Bannwarth, C.; Bohle, F.; Ehlert, S.; Feldmann, G.; Gorges, J.; Müller, M.; Neudecker, T.; Plett, C.; Spicher, S.; Steinbach, P.; Wesołowski, P. A.; Zeller, F. *CREST—A Program for the Exploration of Low-Energy Molecular Chemical Space.* J. Chem. Phys. 2024, 160 (11), 114110. https://doi.org/10.1063/5.0197592
+
+[3] Bannwarth, C.; Ehlert, S.; Grimme, S. *GFN2-xTB—An Accurate and Broadly Parametrized Self-Consistent Tight-Binding Quantum Chemical Method with Multipole Electrostatics and Density-Dependent Dispersion Contributions.* J. Chem. Theory Comput. 2019, 15 (3), 1652–1671. https://doi.org/10.1021/acs.jctc.8b01176
+
+[4] Mann, E. L.; Wagen, C. C.; Vandezande, J. E.; Wagen, A. M.; Schneider, S. C. *Egret-1: Pretrained Neural Network Potentials for Efficient and Accurate Bioorganic Simulation.* arXiv:2504.20955, 2025. https://doi.org/10.48550/arXiv.2504.20955
+
