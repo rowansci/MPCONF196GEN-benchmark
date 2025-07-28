@@ -20,7 +20,7 @@ SMILES = {
 
 
 with open("SMILES.txt", "w") as f:
-    f.write("rotatable_bonds\tSMILES\tmolecule_id\n")
+    f.write("molecule_id\trotatable_bonds\tSMILES\tSMILES_with_H\n")
     for name, smi in SMILES.items():
         mol = Chem.MolFromSmiles(smi)
         if mol is None:
@@ -28,4 +28,8 @@ with open("SMILES.txt", "w") as f:
             continue
         smi_canon = Chem.MolToSmiles(mol)
         n_rot = rdMolDescriptors.CalcNumRotatableBonds(mol)
-        f.write(f"{n_rot}\t{smi_canon}\t{name}\n")
+
+        mol_H = Chem.AddHs(mol)
+        smi_with_H = Chem.MolToSmiles(mol_H)
+
+        f.write(f"{name}\t{n_rot}\t{smi_canon}\t{smi_with_H}\n")

@@ -1,14 +1,14 @@
-rotatable_bonds	SMILES	molecule_id
-0	C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@@H]2CCCN2C(=O)[C@H]2CCCN2C(=O)[C@H](C)NC(=O)[C@H](C)NC1=O	CAMVES_I
-0	CN1CC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC1=O	CHPSAR_I
-6	C=C1C(=O)O[C@@H]2C/C(COC(C)=O)=C\CC[C@](C)(O)C[C@@H](OC(=O)/C(=C\C)COC(C)=O)[C@@H]12	COHVAW_I
-7	N[C@H](Cc1ccccc1)C(=O)NCC(=O)NCC(=O)O	FGG55
-7	C[C@@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)CN)C(=O)O	GFA01
-7	NCC(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)O	GGF01
-8	COC(=O)[C@@H]1CCCN(C(=O)[C@H](Cc2cccc(O)c2)NC(=O)[C@@H](NC(C)=O)C(C)C)N1	GS464992_I
-4	CO[C@@H]1CC/C=C/c2cccc(c2)COC(=O)[C@@H]2CCCN(N2)C(=O)[C@H](Cc2cccc(O)c2)NC(=O)[C@H](C(C)C)NC(=O)[C@@H]1C	GS557577_I
-0	O=C1COCC(=O)OCC(=O)NCCOCCN1	POXTRD_I
-6	CC(=O)CC[C@H]1C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](Cc2cccc(O)c2)C(=O)N2CCC[C@H](N2)C(=O)OCC/C=C/C=C/[C@H](O)[C@H](C)[C@H]1O	SANGLI_I
-5	N[C@@H](Cc1c[nH]c2ccccc12)C(=O)NCC(=O)O	WG01
-7	N[C@@H](Cc1c[nH]c2ccccc12)C(=O)NCC(=O)NCC(=O)O	WGG01
-4	O=C1CN2CCCN(CC2)CC(=O)NCCN(Cc2ccccc2)CCNC(=O)CN2CCCN(CC2)CC(=O)NCCN(Cc2ccccc2)CCN1	YIVNOG_I
+molecule_id	rotatable_bonds	SMILES	SMILES_with_H
+CAMVES_I	0	C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@@H]2CCCN2C(=O)[C@H]2CCCN2C(=O)[C@H](C)NC(=O)[C@H](C)NC1=O	[H]N1C(=O)[C@]([H])(C([H])([H])[H])N([H])C(=O)[C@@]2([H])N(C(=O)[C@]3([H])N(C(=O)[C@]([H])(C([H])([H])[H])N([H])C(=O)[C@]([H])(C([H])([H])[H])N([H])C(=O)[C@]1([H])C([H])([H])[H])C([H])([H])C([H])([H])C3([H])[H])C([H])([H])C([H])([H])C2([H])[H]
+CHPSAR_I	0	CN1CC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC1=O	[H]C([H])([H])N1C(=O)C([H])([H])N(C([H])([H])[H])C(=O)C([H])([H])N(C([H])([H])[H])C(=O)C([H])([H])N(C([H])([H])[H])C(=O)C([H])([H])N(C([H])([H])[H])C(=O)C([H])([H])N(C([H])([H])[H])C(=O)C([H])([H])N(C([H])([H])[H])C(=O)C1([H])[H]
+COHVAW_I	6	C=C1C(=O)O[C@@H]2C/C(COC(C)=O)=C\CC[C@](C)(O)C[C@@H](OC(=O)/C(=C\C)COC(C)=O)[C@@H]12	[H]O[C@@]1(C([H])([H])[H])C([H])([H])C([H])([H])/C([H])=C(/C([H])([H])OC(=O)C([H])([H])[H])C([H])([H])[C@@]2([H])OC(=O)C(=C([H])[H])[C@]2([H])[C@]([H])(OC(=O)/C(=C(/[H])C([H])([H])[H])C([H])([H])OC(=O)C([H])([H])[H])C1([H])[H]
+FGG55	7	N[C@H](Cc1ccccc1)C(=O)NCC(=O)NCC(=O)O	[H]OC(=O)C([H])([H])N([H])C(=O)C([H])([H])N([H])C(=O)[C@]([H])(N([H])[H])C([H])([H])c1c([H])c([H])c([H])c([H])c1[H]
+GFA01	7	C[C@@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)CN)C(=O)O	[H]OC(=O)[C@]([H])(N([H])C(=O)[C@@]([H])(N([H])C(=O)C([H])([H])N([H])[H])C([H])([H])c1c([H])c([H])c([H])c([H])c1[H])C([H])([H])[H]
+GGF01	7	NCC(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)O	[H]OC(=O)[C@@]([H])(N([H])C(=O)C([H])([H])N([H])C(=O)C([H])([H])N([H])[H])C([H])([H])c1c([H])c([H])c([H])c([H])c1[H]
+GS464992_I	8	COC(=O)[C@@H]1CCCN(C(=O)[C@H](Cc2cccc(O)c2)NC(=O)[C@@H](NC(C)=O)C(C)C)N1	[H]Oc1c([H])c([H])c([H])c(C([H])([H])[C@@]([H])(C(=O)N2N([H])[C@]([H])(C(=O)OC([H])([H])[H])C([H])([H])C([H])([H])C2([H])[H])N([H])C(=O)[C@@]([H])(N([H])C(=O)C([H])([H])[H])C([H])(C([H])([H])[H])C([H])([H])[H])c1[H]
+GS557577_I	4	CO[C@@H]1CC/C=C/c2cccc(c2)COC(=O)[C@@H]2CCCN(N2)C(=O)[C@H](Cc2cccc(O)c2)NC(=O)[C@H](C(C)C)NC(=O)[C@@H]1C	[H]Oc1c([H])c([H])c([H])c(C([H])([H])[C@@]2([H])C(=O)N3N([H])[C@]([H])(C(=O)OC([H])([H])c4c([H])c([H])c([H])c(c4[H])/C([H])=C(\[H])C([H])([H])C([H])([H])[C@@]([H])(OC([H])([H])[H])[C@@]([H])(C([H])([H])[H])C(=O)N([H])[C@@]([H])(C([H])(C([H])([H])[H])C([H])([H])[H])C(=O)N2[H])C([H])([H])C([H])([H])C3([H])[H])c1[H]
+POXTRD_I	0	O=C1COCC(=O)OCC(=O)NCCOCCN1	[H]N1C(=O)C([H])([H])OC(=O)C([H])([H])OC([H])([H])C(=O)N([H])C([H])([H])C([H])([H])OC([H])([H])C1([H])[H]
+SANGLI_I	6	CC(=O)CC[C@H]1C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](Cc2cccc(O)c2)C(=O)N2CCC[C@H](N2)C(=O)OCC/C=C/C=C/[C@H](O)[C@H](C)[C@H]1O	[H]Oc1c([H])c([H])c([H])c(C([H])([H])[C@@]2([H])C(=O)N3N([H])[C@]([H])(C(=O)OC([H])([H])C([H])([H])/C([H])=C([H])/C([H])=C(\[H])[C@]([H])(O[H])[C@]([H])(C([H])([H])[H])[C@@]([H])(O[H])[C@@]([H])(C([H])([H])C([H])([H])C(=O)C([H])([H])[H])C(=O)N([H])[C@@]([H])(C([H])(C([H])([H])[H])C([H])([H])[H])C(=O)N2[H])C([H])([H])C([H])([H])C3([H])[H])c1[H]
+WG01	5	N[C@@H](Cc1c[nH]c2ccccc12)C(=O)NCC(=O)O	[H]OC(=O)C([H])([H])N([H])C(=O)[C@@]([H])(N([H])[H])C([H])([H])c1c([H])n([H])c2c([H])c([H])c([H])c([H])c12
+WGG01	7	N[C@@H](Cc1c[nH]c2ccccc12)C(=O)NCC(=O)NCC(=O)O	[H]OC(=O)C([H])([H])N([H])C(=O)C([H])([H])N([H])C(=O)[C@@]([H])(N([H])[H])C([H])([H])c1c([H])n([H])c2c([H])c([H])c([H])c([H])c12
+YIVNOG_I	4	O=C1CN2CCCN(CC2)CC(=O)NCCN(Cc2ccccc2)CCNC(=O)CN2CCCN(CC2)CC(=O)NCCN(Cc2ccccc2)CCN1	[H]c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])N([H])C(=O)C([H])([H])N3C([H])([H])C([H])([H])N(C([H])([H])C(=O)N([H])C([H])([H])C([H])([H])N(C([H])([H])c4c([H])c([H])c([H])c([H])c4[H])C([H])([H])C([H])([H])N([H])C(=O)C([H])([H])N4C([H])([H])C([H])([H])N(C([H])([H])C(=O)N([H])C([H])([H])C2([H])[H])C([H])([H])C([H])([H])C4([H])[H])C([H])([H])C([H])([H])C3([H])[H])c([H])c1[H]
