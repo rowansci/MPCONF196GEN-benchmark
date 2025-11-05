@@ -9,7 +9,8 @@ A conformer generation benchmark created from the MPCONF196 benchmark energy dat
 We generated reference conformers with CREST iMTD-GC [2] using GFN2-xTB [3] and computed conformer energies using Egret-1 [4] neural network potential.
 
 ## Usage
-`SMILES.txt` contains the number of rotateable bonds, canonical SMILES strings and identifier for each molecule. Each `molecules/{molecule_id}/` directory contains a `crest_conformers_egret.extxyz` file with conformers and energies for each molecule.
+- `SMILES.txt` contains the number of rotateable bonds, canonical SMILES strings and identifier for each molecule.
+-  Each `molecules/{molecule_id}/` directory contains a `crest_conformers.xyz` file with conformers and energies for each molecule.
 
 ## Creating the Benchmark
 
