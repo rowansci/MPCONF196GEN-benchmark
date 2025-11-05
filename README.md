@@ -1,5 +1,4 @@
-# mpconf196-gen
-
+# MPCONF196GEN
 *Molecular Conformer Generation Benchmark*
 
 <img src='img/macrocycle_fail.jpg' width=350>
