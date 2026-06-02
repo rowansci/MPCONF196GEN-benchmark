@@ -15,7 +15,7 @@ We generated reference conformers with CREST iMTD-GC [2] using GFN2-xTB [3] and 
 
 All packages necessary for making this benchmark can be installed by creating a conda environment from `env.yml`.
 
-We ran CREST on each `MPCONF196_data/{molecule_id}.xyz` file, outputs and conformers can be found in `molecules/{molecule_id}/crest.out` and `molecules/{molecule_id}/crest_conformers.xyz` respectively. The Egret-1 checkpoint and scripts we used to calculate conformer energies and create `SMILES.txt` can be found in `tools/`. We generated SMILES for each molecule from the `MPCONF196_data/{molecule_id}.xyz` file with [rowansci.com](https://rowansci.com), except for `MPCONF196_data/YIVNOG_I.xyz` which we made by hand.
+We ran CREST on each `MPCONF196_data/{molecule_id}.xyz` file, outputs and conformers can be found in `molecules/{molecule_id}/crest.out` and `molecules/{molecule_id}/crest_conformers.xyz` respectively. The Egret-1 checkpoint and scripts we used to calculate conformer energies and create `SMILES.txt` can be found in `tools/`. We generated SMILES for each molecule from the `MPCONF196_data/{molecule_id}.xyz` file with [rowansci.com](https://rowansci.com) [5], except for `MPCONF196_data/YIVNOG_I.xyz` which we made by hand.
 
 ### Settings
 
@@ -47,4 +47,6 @@ If you use the MPCONF196GEN benchmark in your research, please cite:
 [3] Bannwarth, C.; Ehlert, S.; Grimme, S. *GFN2-xTB—An Accurate and Broadly Parametrized Self-Consistent Tight-Binding Quantum Chemical Method with Multipole Electrostatics and Density-Dependent Dispersion Contributions.* J. Chem. Theory Comput. 2019, 15 (3), 1652–1671. https://doi.org/10.1021/acs.jctc.8b01176
 
 [4] Mann, E. L.; Wagen, C. C.; Vandezande, J. E.; Wagen, A. M.; Schneider, S. C. *Egret-1: Pretrained Neural Network Potentials for Efficient and Accurate Bioorganic Simulation.* arXiv:2504.20955, 2025. https://doi.org/10.48550/arXiv.2504.20955
+
+[5] *Rowan Scientific.* https://www.rowansci.com
 
