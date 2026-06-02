@@ -17,6 +17,22 @@ All packages necessary for making this benchmark can be installed by creating a 
 
 We ran CREST on each `data/{molecule_id}.xyz` file, outputs and conformers can be found in `molecules/{molecule_id}/crest.out` and `molecules/{molecule_id}/crest_confromers.xyz` respectively. The Egret-1 checkpoint and scripts we used to calculate conformer energies and create `SMILES.txt` can be found in `tools/`. We generated SMILES for each molecule from the `data/{molecule_id}.xyz` file with [rowansci.com](https://rowansci.com), except for `data/YIVNOG_I.xyz` which we made by hand.
 
+## License
+
+MPCONF196GEN Benchmark © 2026 Rowan Scientific Corporation. This benchmark (data and code) is released under the [Creative Commons Attribution 4.0 International License (CC-BY 4.0)](LICENSE).
+
+## Citation
+
+If you use the MPCONF196GEN benchmark in your research, please cite:
+
+```bibtex
+@software{mpconf196gen,
+  title = {MPCONF196GEN: A Molecular Conformer Generation Benchmark},
+  year = {2026},
+  url = {https://github.com/rowansci/mpconf196-gen-benchmark}
+}
+```
+
 ## References
 
 [1] Řezáč, J.; Bím, D.; Gutten, O.; Rulíšek, L. *Toward Accurate Conformational Energies of Smaller Peptides and Medium-Sized Macrocycles: MPCONF196 Benchmark Energy Data Set.* J. Chem. Theory Comput. 2018, 14 (3), 1254–1266. https://doi.org/10.1021/acs.jctc.7b01074
