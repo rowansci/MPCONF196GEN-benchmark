@@ -13,9 +13,14 @@ We generated reference conformers with CREST iMTD-GC [2] using GFN2-xTB [3] and 
 
 ## Creating the Benchmark
 
-All packages necessary for making this benchmark can be installed by creating a conda envrionment from `env.yml`.
+All packages necessary for making this benchmark can be installed by creating a conda environment from `env.yml`.
 
-We ran CREST on each `data/{molecule_id}.xyz` file, outputs and conformers can be found in `molecules/{molecule_id}/crest.out` and `molecules/{molecule_id}/crest_confromers.xyz` respectively. The Egret-1 checkpoint and scripts we used to calculate conformer energies and create `SMILES.txt` can be found in `tools/`. We generated SMILES for each molecule from the `data/{molecule_id}.xyz` file with [rowansci.com](https://rowansci.com), except for `data/YIVNOG_I.xyz` which we made by hand.
+We ran CREST on each `MPCONF196_data/{molecule_id}.xyz` file, outputs and conformers can be found in `molecules/{molecule_id}/crest.out` and `molecules/{molecule_id}/crest_conformers.xyz` respectively. The Egret-1 checkpoint and scripts we used to calculate conformer energies and create `SMILES.txt` can be found in `tools/`. We generated SMILES for each molecule from the `MPCONF196_data/{molecule_id}.xyz` file with [rowansci.com](https://rowansci.com), except for `MPCONF196_data/YIVNOG_I.xyz` which we made by hand.
+
+### Settings
+
+- **Conformer search:** CREST 3.0.2, default iMTD-GC workflow at the GFN2-xTB level (`crest MPCONF196_data/{molecule_id}.xyz -T 16`). All other settings were left at their defaults (300 K Fermi temperature, 6 kcal/mol final energy window).
+- **Conformer energies:** Single-point energies on the CREST ensemble computed with the Egret-1 neural network potential (`tools/get_egret_energies.py`, `mace_off` with `tools/EGRET_1.model`, `float64`), reported in kcal/mol.
 
 ## License
 
